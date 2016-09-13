@@ -15,10 +15,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-table, th, td {
-   border: 1px solid black;
-}
-
-table {
-    width: 30%;
+.panel{
+	margin-top: 15px;
 }

@@ -5,11 +5,18 @@ class SalesController < ApplicationController
   # GET /sales.json
   def index
     @sales = Sale.all
+
+    @total = 0
+    @sales.each do |s|
+      @total+= s.price
+    end
+    @total
   end
 
   # GET /sales/1
   # GET /sales/1.json
   def show
+
   end
 
   # GET /sales/new

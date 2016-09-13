@@ -1,15 +1,27 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid">
+	<div class="panel panel-primary">
+  		<div class="panel-heading"> <h1>New sale</h1></div>
+    		<div class="panel-body">
+				<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Book:</strong>
-  <%= @sale.book %>
-</p>
+				<p>
+				  <strong>Book:</strong>
+				  <%= @sale.book %>
+				</p>
 
-<p>
-  <strong>Price:</strong>
-  <%= @sale.price %>
-</p>
+				<p>
+				  <strong>Price:</strong>
+				  <%= @sale.price %>
+				</p>
+
+				<p>
+				  <strong>Image url:</strong>
+				  <%= image_tag(@sale.image_url) %>
+				</p>
 
 
-<%= link_to 'Edit', edit_sale_path(@sale) %> |
-<%= link_to 'Back', sales_path %>
+				<%= link_to 'Edit', edit_sale_path(@sale) %> |
+				<%= link_to 'Back', sales_path %>
+		</div>
+	</div>
+</div>
